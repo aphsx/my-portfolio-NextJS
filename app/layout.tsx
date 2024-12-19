@@ -1,5 +1,5 @@
 import './globals.css';
-import Header from '@/components/Header';
+import Header from '@/components/Navbar';
 import { Space_Grotesk } from 'next/font/google';
 
 const spaceGrotesk = Space_Grotesk({

@@ -30,3 +30,88 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+
+/* Timeline Container */
+.about-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333; /* สีข้อความเป็นสีดำ */
+  
+}
+
+.about-section h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333; /* สีหัวข้อ */
+}
+
+.timeline {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 18px;
+  left: 30px;
+  bottom: 0;
+  width: 2px;
+  background: #ddd; /* เส้น Timeline สีเทาอ่อน */
+}
+
+.timeline li {
+  position: relative;
+  margin: 20px 0;
+  padding-left: 60px;
+}
+
+.timeline .circle {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  width: 20px;
+  height: 20px;
+  background-color: #f9f9f9; /* พื้นหลังวงกลม */
+  border: 2px solid #ddd; /* ขอบวงกลมสีเทาอ่อน */
+  border-radius: 50%;
+}
+
+.timeline .content {
+  background-color: #f0f0f0; /* กล่องข้อความสีขาว */
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+}
+
+.timeline .content h2 {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px;
+  color: #333; /* สีหัวข้อ */
+}
+
+.timeline .content .view-link {
+  font-size: 0.9rem;
+  color: #007bff; /* ลิงก์สีน้ำเงิน */
+  text-decoration: none;
+}
+
+.timeline .content .view-link:hover {
+  text-decoration: underline;
+}
+
+.timeline .content p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555; /* สีข้อความเนื้อหา */
+}
