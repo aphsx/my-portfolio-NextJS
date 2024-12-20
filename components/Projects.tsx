@@ -1,10 +1,10 @@
 // pages/projects.js
 import React from "react";
+import Link from "next/link";
 import projects from "@/data/projectsData"; // Import the project data
 
 export default function Projects() {
   return (
-    
       <div className="max-w-7xl mx-auto">
         {/* Page Header */}
         <h1 className="text-5xl font-bold text-center text-white mb-4">
@@ -15,6 +15,7 @@ export default function Projects() {
         </p>
 
         {/* Cards Grid */}
+        <Link href="/projects">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <div
@@ -50,6 +51,7 @@ export default function Projects() {
             </div>
           ))}
         </div>
+        </Link>
       </div>
  
   );
