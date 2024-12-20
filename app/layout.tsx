@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           
           {/* Content */}
-          {children}
+          {children }
           
           {/* Footer */}
           <footer className="flex justify-center items-center py-6 text-sm text-gray-500 dark:text-gray-400">

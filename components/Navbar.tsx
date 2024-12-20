@@ -1,48 +1,44 @@
+import Link from "next/link";
+
 const Header = () => {
   return (
-    <header className="flex items-center w-full dark:bg-gray-950 justify-between py-10 ">
-      {/* โลโก้ */}
-      <a className="break-words" aria-label="TailwindBlog" href="/">
+    <header className="flex items-center w-full dark:bg-gray-950 justify-between py-10">
+      {/* Logo */}
+      <Link href="/" className="break-words" aria-label="TailwindBlog">
         <div className="flex items-center justify-between">
-          <div className="mr-3">
-
-          </div>
+          <div className="mr-3"></div>
           <div className="hidden h-6 text-2xl font-semibold sm:block hover:text-blue-500 dark:text-gray-100 dark:hover:text-primary-400">
             aphsx dev
           </div>
         </div>
-      </a>
+      </Link>
 
-      {/* เมนู */}
+      {/* Menu */}
       <div className="flex items-center space-x-4 leading-5 sm:space-x-6">
-        {/* ลิงก์เมนู */}
+        {/* Menu Links */}
         <div className="no-scrollbar hidden max-w-40 items-center space-x-4 overflow-x-auto sm:flex sm:space-x-6 md:max-w-72 lg:max-w-96">
-          <a
+          <Link
+            href="/"
             className="block font-medium text-gray-900 hover:text-blue-500 dark:text-gray-100 dark:hover:text-primary-400"
-            href="#"
           >
             Blog
-          </a>
-          <a
+          </Link>
+          
+          <Link
+            href="/projects"
             className="block font-medium text-gray-900 hover:text-blue-500 dark:text-gray-100 dark:hover:text-primary-400"
-            href="#"
-          >
-            Tags
-          </a>
-          <a
-            className="block font-medium text-gray-900 hover:text-blue-500 dark:text-gray-100 dark:hover:text-primary-400"
-            href="#"
           >
             Projects
-          </a>
-          <a
+          </Link>
+          <Link
+            href="/about"
             className="block font-medium text-gray-900 hover:text-blue-500 dark:text-gray-100 dark:hover:text-primary-400"
-            href="#"
           >
             About
-          </a>
+          </Link>
         </div>
-        {/* ไอคอนค้นหา */}
+
+        {/* Search Icon */}
         <button aria-label="Search">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +55,8 @@ const Header = () => {
             />
           </svg>
         </button>
-        {/* ตัวเลือกธีม */}
+
+        {/* Theme Selector */}
         <div className="mr-5 flex items-center">
           <div className="relative inline-block text-left">
             <div className="flex items-center justify-center hover:text-blue-500 dark:text-gray-100 dark:hover:text-primary-400">
