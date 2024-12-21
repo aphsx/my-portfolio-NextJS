@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export", // บอก Next.js ว่าต้องการสร้าง Static Site
 };
 
 export default nextConfig;
