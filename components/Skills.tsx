@@ -10,52 +10,57 @@ import { SiNextdotjs as FaNextjs } from "react-icons/si";
 
 export const SkillsAndFrameworks = () => {
   return (
-    <section className="skills-section mt-10 max-w-7xl mx-auto">
-      <h2 className="text-4xl font-bold text-gray-800 mb-4">
+    <section className="mt-6 max-w-5xl mx-auto">
+      <h2 className="text-left font-bold text-4xl mt-10 ml-0">
         Skills and Frameworks
       </h2>
       {/* Skills and Frameworks Grid */}
-      <div className="grid-cols-4 gap-4 flex items-center justify-center mt-10">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mt-6">
         {/* Icons with Tooltips */}
-        <div className="relative group flex justify-center items-center p-2 border border-zinc-800 rounded-md">
-          <FaNextjs className="text-black " size={40} />
+        <div className="relative group flex flex-col items-center p-2 bg-white border border-zinc-800 rounded-md shadow hover:shadow-lg">
+          <FaNextjs className="text-black " size={36} />
           <span className="absolute bottom-full mb-2 hidden group-hover:block text-xs bg-black text-white px-2 py-1 rounded">
             Next.js
           </span>
         </div>
 
-        <div className="relative group flex justify-center items-center p-2 border border-zinc-800 rounded-md">
-          <FaReact className="text-black hover:text-blue-500" size={40} />
+        <div className="relative group flex flex-col items-center p-2 bg-white border border-zinc-800 rounded-md shadow hover:shadow-lg">
+          <FaReact className="text-blue-500" size={36} />
           <span className="absolute bottom-full mb-2 hidden group-hover:block text-xs bg-black text-white px-2 py-1 rounded">
             React
           </span>
         </div>
-        <div className="relative group flex justify-center items-center p-2 border border-zinc-800 rounded-md">
-          <FaHtml5 className="text-black hover:text-orange-500" size={40} />
+
+        <div className="relative group flex flex-col items-center p-2 bg-white border border-zinc-800 rounded-md shadow hover:shadow-lg">
+          <FaHtml5 className="text-orange-500" size={36} />
           <span className="absolute bottom-full mb-2 hidden group-hover:block text-xs bg-black text-white px-2 py-1 rounded">
             HTML5
           </span>
         </div>
-        <div className="relative group flex justify-center items-center p-2 border border-zinc-800 rounded-md">
-          <FaCss3Alt className="text-black hover:text-blue-600" size={40} />
+
+        <div className="relative group flex flex-col items-center p-2 bg-v border border-zinc-800 rounded-md shadow hover:shadow-lg">
+          <FaCss3Alt className="text-blue-600" size={36} />
           <span className="absolute bottom-full mb-2 hidden group-hover:block text-xs bg-black text-white px-2 py-1 rounded">
             CSS3
           </span>
         </div>
-        <div className="relative group flex justify-center items-center p-2 border border-zinc-800 rounded-md">
-          <FaJs className="text-black hover:text-yellow-500" size={40} />
+
+        <div className="relative group flex flex-col items-center p-2 bg-white border border-zinc-800 rounded-md shadow hover:shadow-lg">
+          <FaJs className="text-yellow-500" size={36} />
           <span className="absolute bottom-full mb-2 hidden group-hover:block text-xs bg-black text-white px-2 py-1 rounded">
             JavaScript
           </span>
         </div>
-        <div className="relative group flex justify-center items-center p-2 border border-zinc-800 rounded-md">
-          <FaNodeJs className="text-black hover:text-green-600" size={40} />
+
+        <div className="relative group flex flex-col items-center p-2 bg-v border border-zinc-800 rounded-md shadow hover:shadow-lg">
+          <FaNodeJs className="text-green-600" size={36} />
           <span className="absolute bottom-full mb-2 hidden group-hover:block text-xs bg-black text-white px-2 py-1 rounded">
             Node.js
           </span>
         </div>
-        <div className="relative group flex justify-center items-center p-2 border border-zinc-800 rounded-md">
-          <FaPython className="text-black hover:text-green-400" size={40} />
+
+        <div className="relative group flex flex-col items-center p-2 bg-white border border-zinc-800 rounded-md shadow hover:shadow-lg">
+          <FaPython className="text-green-400" size={36} />
           <span className="absolute bottom-full mb-2 hidden group-hover:block text-xs bg-black text-white px-2 py-1 rounded">
             Python
           </span>

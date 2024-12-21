@@ -1,5 +1,5 @@
 "use client";
-import './globals.css';
+import '@/app/globals.css';
 import Header from '@/components/Navbar';
 import { Space_Grotesk } from 'next/font/google';
 import { useEffect, useState } from 'react';
@@ -36,10 +36,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={spaceGrotesk.variable}>
       <head>
         <link rel="icon" href="/favicon.png" />
+        {/* Add meta viewport for responsiveness */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Aphsx Blog</title>
       </head>
       <body className="bg-white dark:bg-gray-900 min-h-screen font-sans">
-        <section className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+      <section className="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0 overflow-x-hidden">
           {/* Header */}
           <Header />
           

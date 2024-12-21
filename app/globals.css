@@ -47,18 +47,17 @@ body {
 
 /* Timeline Container */
 .about-section {
-  max-width: 800px;
+  max-width: 100%; /* เต็มความกว้างของหน้าจอ */
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px; /* เว้นระยะขอบน้อยลง */
   font-family: 'Arial', sans-serif;
-  color: #333; /* สีข้อความเป็นสีดำ */
-  
+  color: #333; /* สีข้อความ */
 }
 
 .about-section h1 {
   text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 30px;
+  font-size: 1.2rem; /* ขนาดตัวอักษรเล็กลง */
+  margin-bottom: 10px;
   color: #333; /* สีหัวข้อ */
 }
 
@@ -72,49 +71,51 @@ body {
 .timeline::before {
   content: '';
   position: absolute;
-  top: 18px;
-  left: 30px;
+  top: 0;
+  left: 15px; /* ตำแหน่งเส้น Timeline */
   bottom: 0;
   width: 2px;
-  background: #ddd; /* เส้น Timeline สีเทาอ่อน */
+  background: #ddd; /* สีของเส้น Timeline */
 }
 
+/* Timeline Item */
 .timeline li {
   position: relative;
-  margin: 20px 0;
-  padding-left: 60px;
+  margin: 15px 0;
+  padding-left: 50px; /* ลดระยะ Padding */
 }
 
 .timeline .circle {
   position: absolute;
-  left: 21px;
-  top: 18px;
-  width: 20px;
-  height: 20px;
-  background-color: #f9f9f9; /* พื้นหลังวงกลม */
-  border: 2px solid #ddd; /* ขอบวงกลมสีเทาอ่อน */
+  left: 10px; /* ตำแหน่งวงกลม */
+  top: 0;
+  transform: translateY(50%);
+  width: 12px; /* ขนาดวงกลมเล็กลง */
+  height: 12px;
+  background-color: #f9f9f9; /* สีพื้นหลังวงกลม */
+  border: 2px solid #ddd; /* สีเส้นขอบวงกลม */
   border-radius: 50%;
 }
 
 .timeline .content {
-  background-color: #f8f8f8; /* กล่องข้อความสีขาว */
-  padding: 15px 20px;
+  background-color: #f8f8f8; /* สีพื้นหลังกล่อง */
+  padding: 8px 10px; /* ลด Padding ของกล่อง */
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเบาๆ */
+  margin-left: 20px; /* เว้นระยะจากวงกลม */
+  width: calc(100% - 40px); /* ปรับขนาดกล่องให้เหมาะกับหน้าจอ */
+  max-width: 280px; /* จำกัดขนาดกว้างสุดสำหรับ Mobile-S */
 }
 
 .timeline .content h2 {
-  font-size: 1.2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 0 10px;
+  font-size: 0.8rem; /* ลดขนาดหัวข้อ */
+  margin: 0 0 5px;
   color: #333; /* สีหัวข้อ */
 }
 
 .timeline .content .view-link {
-  font-size: 0.9rem;
-  color: #007bff; /* ลิงก์สีน้ำเงิน */
+  font-size: 0.7rem; /* ลดขนาดลิงก์ */
+  color: #007bff; /* สีลิงก์ */
   text-decoration: none;
 }
 
@@ -124,10 +125,7 @@ body {
 
 .timeline .content p {
   margin: 0;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #555; /* สีข้อความเนื้อหา */
+  font-size: 0.75rem; /* ขนาดข้อความย่อหน้าเล็กลง */
+  line-height: 1.4;
+  color: #555; /* สีข้อความ */
 }
-
-
-

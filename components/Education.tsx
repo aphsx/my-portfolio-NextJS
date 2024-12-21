@@ -1,46 +1,40 @@
+import educationData from "@/data/educationData";
 export const Education = () => {
   return (
-    <section className="">
-      <div className="text-left font-bold text-4xl mt-10">Education.</div>
-      <div className="about-section">
-      <ul className="timeline">
-        <li>
-          <div className="circle"></div>
-          <div className="content">
-            <h2 className="font-semibold">
-              Bangkok University 2023
-              <a
-                href="https://github.com/your-github"
-                target="_blank"
-                className="view-link"
-              >
-                View Github
-              </a>
-            </h2>
-            <p>
-              The power of first impressions cannot be underestimated, and the
-              gateway to capitalizing on them lies in exceptional website
-              design...
-            </p>
-          </div>
-        </li>
-        <li>
-          <div className="circle"></div>
-          <div className="content">
-            <h2 className="font-semibold">
-            Matthayomwatmaikrongtong School 2018
-              <a href="/projects" target="_blank" className="view-link">
-                View Products
-              </a>
-            </h2>
-            <p>
-              While I may not fit the conventional mold of a product manager, my
-              diverse skill set in research, product design, and product
-              coordination...
-            </p>
-          </div>
-        </li>
-      </ul>
+    <section className="px-4 md:px-8 lg:px-16 max-w-5xl mx-auto">
+      <div className="text-left font-bold text-3xl sm:text-4xl mt-10">
+        Education.
+      </div>
+      <div className="mt-6 relative">
+        {/* Timeline Line */}
+        <div className="absolute left-2.5 sm:left-8 top-7 bottom-0 border-l-2 border-gray-300"></div>
+
+        {/* Timeline Items */}
+        <ul className="space-y-12">
+          {educationData.map((item, index) => (
+            <li key={index} className="relative flex items-start">
+              {/* Circle */}
+              <div className="absolute left-2 sm:left-8 w-4 h-4 top-7 bg-white border-2 border-gray-500 rounded-full transform -translate-x-1/2"></div>
+              {/* Content */}
+              <div className="ml-10 sm:ml-20 bg-white p-6 rounded-lg shadow-md break-words overflow-hidden max-w-full">
+                <h2 className="font-bold text-lg sm:text-xl">
+                  {item.title}
+                  <a
+                    href={item.link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline hover:text-blue-800 break-words"
+                  >
+                    {item.link.text}
+                  </a>
+                </h2>
+                <p className="text-sm sm:text-base mt-2 text-gray-700">
+                  {item.description}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
