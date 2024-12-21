@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export default function AboutSection() {
   return (
     <div className="opacity-100 transform-none">
