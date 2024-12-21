@@ -2,6 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import projects from "@/data/projectsData"; // Import the project data
+import Image from "next/image";
 
 export default function Projects() {
   return (
@@ -24,10 +25,12 @@ export default function Projects() {
             >
               {/* Card Image */}
               <div className="relative">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
                   className="w-full h-40 object-cover"
+                  width={300}
+                  height={160}
                 />
                 <span className="absolute top-3 left-3 bg-blue-500 text-white text-xs px-3 py-1 rounded-full">
                   {project.category}

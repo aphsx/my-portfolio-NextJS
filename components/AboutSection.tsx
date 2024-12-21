@@ -3,7 +3,7 @@ export default function AboutSection() {
     <div className="opacity-100 transform-none">
   <h2 className="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
   <p className="text-base text-gray-700 leading-relaxed">
-    I'm a Full-Stack web developer skilled in building dynamic user interfaces with React and Next.js, and developing robust APIs with Node.js. I enjoy solving complex problems and crafting user-friendly web applications.
+    I&apos;m a Full-Stack web developer skilled in building dynamic user interfaces with React and Next.js, and developing robust APIs with Node.js. I enjoy solving complex problems and crafting user-friendly web applications.
   </p>
   <p className="text-base text-gray-700 leading-relaxed mt-4">
     Beyond coding, I love photography, traveling, and exploring creative hobbies like drawing.
