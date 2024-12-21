@@ -1,17 +1,16 @@
-import AboutMe from "@/components/AboutMe";
-import Education from "@/components/Education";
 import ThreeCanvas from "@/components/ThreeCanvas";
+import ProfileSection from "@/components/ProfileSection";
+import Hero from "@/components/AboutSection";
 import SkillsAndFrameworks from "@/components/Skills";
-
+import Education from "@/components/Education";
 export default function Home() {
   return (
-    <div className="min-h-scree py-10 px-4 sm:px-10">
-      <div className="items-center justify-center mt-10">
-        <ThreeCanvas />
-      </div>
-      <SkillsAndFrameworks/>
-      {/* <AboutMe />
-      <Education /> */}
+    <div className="mx-auto max-w-2xl px-4 sm:px-6 xl:px-0 gap-10">
+      {/* <ThreeCanvas /> */}
+      <ProfileSection />
+      <Hero />
+      <SkillsAndFrameworks />
+      <Education />
     </div>
   );
 }

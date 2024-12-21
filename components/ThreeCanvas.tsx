@@ -32,7 +32,7 @@ const ThreeCanvas = () => {
       0.1, 
       1000
     );
-    camera.position.set(5, 0, 0); // Position the camera
+    camera.position.set(5, 1, 0); // Position the camera
     camera.lookAt(0, 0, 0); // Look at the center
     cameraRef.current = camera;
 
@@ -63,7 +63,7 @@ const ThreeCanvas = () => {
         // Set new model
         modelRef.current = gltf.scene;
         modelRef.current.scale.set(1, 1, 1);  // Scale the model
-        modelRef.current.position.set(0, -3, 0); // Center the model in the scene
+        modelRef.current.position.set(0, -5, 0); // Center the model in the scene
         scene.add(modelRef.current);  // Add model to scene
       },
       undefined,

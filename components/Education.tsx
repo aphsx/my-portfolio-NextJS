@@ -1,8 +1,9 @@
 import aboutData from "@/data/Data";
-export const AboutMe = () => {
+export const Education = () => {
   return (
-    <section className="about-section">
-      <div className="text-left pl-10 font-bold text-4xl">Education.</div>
+    <section className="">
+      <div className="text-left font-bold text-4xl mt-10">Education.</div>
+      <div className="about-section">
       <ul className="timeline">
         <li>
           <div className="circle"></div>
@@ -41,8 +42,9 @@ export const AboutMe = () => {
           </div>
         </li>
       </ul>
+      </div>
     </section>
   );
 };
 
-export default AboutMe;
+export default Education;

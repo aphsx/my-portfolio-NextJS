@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles/globals.css */
+/* :root {
+  --font-space-grotesk: 'Space Grotesk', sans-serif;
+}
+
+body {
+  font-family: var(--font-space-grotesk);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+
 .task-list-item::before {
   @apply hidden;
 }
@@ -84,7 +97,7 @@
 }
 
 .timeline .content {
-  background-color: #f0f0f0; /* กล่องข้อความสีขาว */
+  background-color: #f8f8f8; /* กล่องข้อความสีขาว */
   padding: 15px 20px;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เงาเบาๆ */
@@ -115,3 +128,6 @@
   line-height: 1.5;
   color: #555; /* สีข้อความเนื้อหา */
 }
+
+
+
