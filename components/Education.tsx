@@ -1,4 +1,3 @@
-import aboutData from "@/data/Data";
 export const Education = () => {
   return (
     <section className="">

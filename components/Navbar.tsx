@@ -7,7 +7,7 @@ const Header = () => {
       <Link href="/" className="break-words" aria-label="TailwindBlog">
         <div className="flex items-center justify-between">
           <div className="mr-3"></div>
-          <div className="hidden h-6 text-2xl font-semibold sm:block hover:text-blue-500 dark:text-gray-100 dark:hover:text-primary-400">
+          <div className="hidden h-6 text-2xl font-bold sm:block hover:text-blue-500 dark:text-gray-100 dark:hover:text-primary-400">
             aphsx dev
           </div>
         </div>

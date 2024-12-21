@@ -1,9 +1,11 @@
-import aboutMe from "@/data/Data";  // Import aboutMe data
+import aboutMe from "@/data/aboutMeData";  // Import aboutMe data
 
 export const AboutMe = () => {
   return (
-    <section className="about-section">
-      <div className="text-left pl-10 font-bold text-4xl">About Me.</div>
+    <section className="">
+      <div className="text-left font-bold text-4xl mt-10">About Me.</div>
+      <div className="about-section">
+      
       <ul className="timeline">
         {aboutMe.map((item, index) => (
           <li key={index}>
@@ -24,6 +26,7 @@ export const AboutMe = () => {
           </li>
         ))}
       </ul>
+      </div>
     </section>
   );
 };

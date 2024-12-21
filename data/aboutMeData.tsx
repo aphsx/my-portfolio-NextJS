@@ -1,34 +1,4 @@
-const aboutData = [
-    {
-      title: "Engineering",
-      description: "The power of first impressions cannot be underestimated, and the gateway to capitalizing on them lies in exceptional website design...",
-      link: {
-        text: "View Github",
-        href: "https://github.com/your-github",
-      },
-    },
-    {
-      title: "Product",
-      description: "While I may not fit the conventional mold of a product manager, my diverse skill set in research, product design, and product coordination...",
-      link: {
-        text: "View Products",
-        href: "/projects",
-      },
-    },
-    {
-      title: "Design",
-      description: "Despite not fitting the typical designer stereotype, my exceptional visual abilities enable me to excel as a presenter, effectively conveying...",
-      link: {
-        text: "View Dribbble",
-        href: "https://dribbble.com/your-dribbble",
-      },
-    },
-    ];
-  
-  export { aboutData };
-
-
-  const aboutMe = [
+const aboutMe = [
     {
       title: "Center of Specialty Innovation (CoSI) 2024",
       description: `Joined the Center of Specialty Innovation (CoSI), a research lab under Bangkok University. Formerly known as BUMIT, CoSI is a multidisciplinary center established in 2012, focusing on advancing multimedia applications and AI technologies. Participated in projects involving web applications, software development, and other fields, gaining practical experience in a professional environment.`,
@@ -62,16 +32,8 @@ const aboutData = [
       },
     },
     {
-      title: "Projects",
-      description: `Worked on various personal and group projects including web applications, machine learning models, and software development. Some notable projects include a task management app and an AI-based image classifier.`,
-      link: {
-        text: "View Projects",
-        href: "/projects",
-      },
-    },
-    {
       title: "Experience",
-      description: `Interned as a software developer, working on a team to build scalable and efficient software solutions. Gained experience in full-stack development, code optimization, and agile practices.`,
+      description: `Interned as a  Web developer ait CoSI a research lab under Bangkok University, working on a team to build scalable and efficient Web solutions. Gained experience in full-stack development, code optimization, and agile practices.`,
       link: {
         text: "View LinkedIn",
         href: "https://linkedin.com/in/your-linkedin",
