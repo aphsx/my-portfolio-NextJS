@@ -10,8 +10,8 @@ export default function Home() {
       <ProfileSection />
       <Hero />
       <SkillsAndFrameworks />
-      <Education />
-      <AboutMe />
+      {/* <Education />
+      <AboutMe /> */}
     </div>
   );
 }
